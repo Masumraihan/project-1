@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="customLight">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,15 +10,127 @@
 </head>
 
 
-<body>
+<body data-theme="customLight" class="w-full h-full bg-base-200">
   <main>
     <header>
-      <!--Navbar top section start -->
-      <h1 class="text-red-600">hello</h1>
-      <div class="app" id="app">
+      <div class="container py-3 space-y-3 rounded-lg px-7 bg-base-100">
+        <!--Navbar top section start -->
+        <div class="flex items-center justify-between">
+          <ul class="flex items-center text-sm gap-x-4">
+            <li class="p-0 text-xs btn btn-sm btn-link">
+              HotLine
+            </li>
+            <li class="hidden btn btn-xs btn-link md:block">
+              (+91) 9876543210
+            </li>
+          </ul>
+          <ul class="flex items-center text-sm gap-x-4">
+            <li class="cursor-pointer md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </li>
+            <li>mail@gmail.com</li>
+            <li class="hidden md:block">Order</li>
+          </ul>
+        </div>
+        <!--Navbar top section end -->
+
+        <!--Navbar section start -->
+        <div class="items-center p-0 navbar bg-base-100 gap-x-7">
+          <div class="flex navbar-start gap-x-4">
+            <a class="text-xl font-extrabold">Logo</a>
+            <div class="items-center hidden md:flex join">
+              <select class="w-40 py-0 select-sm select select-bordered join-item rounded-3xl">
+                <option disabled selected>All Categories</option>
+                <option>Sci-fi</option>
+                <option>Drama</option>
+                <option>Action</option>
+              </select>
+              <input type="search" name="search" id="search" placeholder="Search"
+                class="input-sm input input-bordered join-item lg:w-80 rounded-3xl">
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hidden navbar-center lg:flex">
+            <ul class="flex w-full px-1 text-sm font-bold gap-x-4">
+              <li><a href="/index.html">Item 1</a></li>
+              <li><a href="/index.html">Item 3</a></li>
+              <li><a href="/index.html">Item 3</a></li>
+              <li><a href="/index.html">Item 3</a></li>
+              <li><a href="/index.html">Item 3</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <ul class="flex items-center gap-4">
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+              </li>
+              <li class="cursor-pointer">
+                <div class="flex items-center gap-2">
+                  <div class="relative w-10 h-10 rounded-full bg-base-200">
+                    <div
+                      class="absolute -bottom-1 -right-1 flex items-center justify-center w-[22px] h-[22px] text-xs rounded-full text-base-100 bg-primary">
+                      $</div>
+                  </div>
+                  <div>
+                    <p class="text-xs ">Cart</p>
+                    <p class="text-sm font-bold">$42,2300</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Navbar section end -->
       </div>
-      <!--Navbar top section end -->
+
+      <!--Navbar category section start -->
+      <div
+        class="container grid grid-cols-4 py-3 rounded-lg md:grid-cols-6 lg:grid-cols-12 sm:grid-cols-4 embla bg-primary text-base-100 px-7 ">
+        <div class="embla__container" id="emblaContainer"></div>
+      </div>
+      <!--Navbar category section end -->
+
     </header>
+    <!-- Banner section start -->
+    <section class="grid grid-cols-12 h-[60vh] container pt-4 gap-4">
+      <div class="col-span-3 border border-blue-700 ">
+        <h3>Offer</h3>
+      </div>
+      <div class="col-span-6 border border-blue-700 "></div>
+      <div class="col-span-3 border border-blue-700 "></div>
+    </section>
+    <!-- Banner section end -->
   </main>
   <script type="module" src="/main.js"></script>
 </body>
